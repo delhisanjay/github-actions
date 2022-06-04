@@ -19,3 +19,4 @@ jobs:
         docker image build -t delhisanjay/gitaction:v1 .
         docker push delhisanjay/gitaction:v1
 
+
