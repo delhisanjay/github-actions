@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build & Push Image
+    - name: Build & Push Image to Docker
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "delhisanjay" --password-stdin
         docker image build -t delhisanjay/gitaction:v1 .
